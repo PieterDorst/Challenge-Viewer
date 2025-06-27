@@ -1,0 +1,6 @@
+{
+  "name": "Student Challenge Viewer",
+  "description": "An interactive viewer for students to visualize their academic and personal challenges using flip cards.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Challenge Viewer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    /* Minimal style to ensure full height for centering if needed */
+    html, body, #root {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      background-image: url('background.jpg'); /* Ensure background.jpg is in the root directory */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    /* body {
+      font-family: sans-serif; /* Default sans-serif stack, will be overridden by Tailwind config */
+    /* } */
+    .ropa-sans-regular {
+      font-family: "Ropa Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .ropa-sans-regular-italic {
+      font-family: "Ropa Sans", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          'ropa': ['"Ropa Sans"', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="font-ropa">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
